@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <axmVueAnimationNumber number="1234.67" customclass=""></axmVueAnimationNumber>
+        <axmVueAnimationNumber number="1234.67" customclass="" duration="2000"></axmVueAnimationNumber>
     </div>
 </template>
 
@@ -16,5 +16,4 @@
 </script>
 
 <style>
-
 </style>

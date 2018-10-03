@@ -5,12 +5,11 @@
 <script>
     export default {
         name: 'axmVueAnimationNumber',
-        props: ['number', 'customclass'],
+        props: ['number', 'customclass', 'duration'],
         data: function () {
             return {
-                value: null, // Your integer number
-                valueAnimate: 0, // Don't touch
-                duration: 5000 // Duration of animation in ms
+                value: null,
+                valueAnimate: 0,
             }
         },
         mounted: function () {
@@ -22,7 +21,7 @@
                 if(this.value != NaN){
 
                     let that = this;
-                    let myTimer
+                    let myTimer;
                     let delay = 9;
                     let adition = 1;
 
@@ -31,7 +30,7 @@
                     }
 
                     if(this.duration > 0){
-                        var tmpDelay = this.duration / delay;
+                        let tmpDelay = this.duration / delay;
                         adition = Math.abs(this.value) / tmpDelay;
                     }else{
                         delay = 0;
